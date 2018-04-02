@@ -16,7 +16,7 @@ public class TestUtil {
 		//Arrange
 		final Integer lastDigit = 5;
 		final Date myDefaultDate = new SimpleDateFormat( "yyyyMMdd" ).parse( "20170208" );
-		final String hora = "17:00";
+		final String hora = "18:00";
 		Utilitario util = new Utilitario();
 		
 		//Action
