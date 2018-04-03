@@ -15,7 +15,7 @@ public class TestUtil {
 	public void shouldPicoPlaca() throws ParseException{
 		//Arrange
 		final Integer lastDigit = 5;
-		final Date myDefaultDate = new SimpleDateFormat( "yyyyMMdd" ).parse( "20170208" );
+		final Date myDefaultDate = new SimpleDateFormat( "yyyyMMdd" ).parse( "20180208" );
 		final String hora = "18:00";
 		Utilitario util = new Utilitario();
 		
@@ -30,7 +30,7 @@ public class TestUtil {
 	public void notHavePicoPlaca()throws ParseException{
 		//Arrange
 		final Integer lastDigit = 5;
-		final Date myDefaultDate = new SimpleDateFormat( "yyyyMMdd" ).parse( "20170209" );
+		final Date myDefaultDate = new SimpleDateFormat( "yyyyMMdd" ).parse( "20180209" );
 		final String hora = "14:00";
 		Utilitario util = new Utilitario();
 		
@@ -44,7 +44,7 @@ public class TestUtil {
 	@Test
 	public void isTheLastDigit() throws GetDigitException{
 		//Arrange
-		final String plate = new String("PBC4562");
+		final String plate = new String("PBC4565");
 		Utilitario util = new Utilitario();
 		
 		//Action
@@ -57,8 +57,8 @@ public class TestUtil {
 	@Test
 	public void shouldTransToDate() throws ParseException{
 		//Arrange
-		final String dateStr = new String("20170209");
-		final Date compare = new SimpleDateFormat( "yyyyMMdd" ).parse( "20170209" );
+		final String dateStr = new String("20180209");
+		final Date compare = new SimpleDateFormat( "yyyyMMdd" ).parse( "20180209" );
 		Utilitario util = new Utilitario();
 		
 		//Action
