@@ -14,7 +14,9 @@ import com.picoplaca.exception.GetDigitException;
  *
  */
 public class Utilitario {
-	
+	/**
+	*Una prueba simple para seguir pruebitas
+	*/
 	public Integer digitLast(String plate) throws GetDigitException{
 		int x = Character.getNumericValue(plate.charAt(plate.length()-1));
 		if(isInteger(x)){
