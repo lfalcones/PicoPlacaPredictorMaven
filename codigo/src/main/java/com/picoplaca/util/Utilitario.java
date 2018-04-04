@@ -32,6 +32,8 @@ public class Utilitario {
 	}
 	
 	private Boolean isInteger(Integer last){
+		//ahora si veamos como nos va
+		//lo que sea
 		if(last > 9){
 			return false;
 		}else{
