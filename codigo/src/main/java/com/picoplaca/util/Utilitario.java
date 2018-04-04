@@ -19,6 +19,7 @@ public class Utilitario {
 	*/
 	public Integer digitLast(String plate) throws GetDigitException{
 		int x = Character.getNumericValue(plate.charAt(plate.length()-1));
+		//aqui unita mas
 		if(isInteger(x)){
 			return x;
 		}else{
